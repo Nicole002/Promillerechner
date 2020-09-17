@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="375.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg120_promillerechner.FXMLDocumentController">
+   <children>
+      <Label layoutX="25.0" layoutY="28.0" prefHeight="36.0" prefWidth="118.0" text="Gewicht (in kg)" />
+      <Label layoutX="25.0" layoutY="69.0" prefHeight="36.0" prefWidth="118.0" text="Grösse (in cm)" />
+      <Label layoutX="27.0" layoutY="156.0" prefHeight="36.0" prefWidth="118.0" text="Geschlecht" />
+      <Label layoutX="23.0" layoutY="174.0" prefHeight="36.0" prefWidth="126.0" text="Biologisches Geschlecht">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="218.0" prefHeight="36.0" prefWidth="191.0" text="Dauer des Konsums (in std)" />
+      <Label layoutX="19.0" layoutY="259.0" prefHeight="36.0" prefWidth="260.0" text="Angaben zum konsumierten Getränk:" />
+      <Label layoutX="84.0" layoutY="308.0" prefHeight="21.0" prefWidth="284.0" text="\%Vol.                    Liter" />
+      <ListView fx:id="lvResult" layoutX="372.0" layoutY="28.0" prefHeight="200.0" prefWidth="397.0" />
+      <Button fx:id="btnBerechnen" layoutX="526.0" layoutY="262.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Berechnen" />
+      <Label layoutX="126.0" layoutY="36.0" text="*" textFill="RED" />
+      <Label layoutX="122.0" layoutY="76.0" text="*" textFill="RED" />
+      <Label layoutX="104.0" layoutY="164.0" text="*" textFill="RED" />
+      <Label layoutX="195.0" layoutY="226.0" text="*" textFill="RED" />
+      <Label layoutX="122.0" layoutY="303.0" text="*" textFill="RED" />
+      <Label layoutX="237.0" layoutY="303.0" text="*" textFill="RED" />
+      <TextField fx:id="tbKG" layoutX="181.0" layoutY="31.0" prefHeight="31.0" prefWidth="90.0" />
+      <TextField fx:id="tbCM" layoutX="181.0" layoutY="71.0" prefHeight="31.0" prefWidth="90.0" />
+      <ComboBox fx:id="cbSex" layoutX="181.0" layoutY="161.0" prefHeight="31.0" prefWidth="152.0" />
+      <Spinner fx:id="spHours" layoutX="212.0" layoutY="221.0" prefHeight="31.0" prefWidth="90.0" />
+      <TextField fx:id="tbVol" layoutX="22.0" layoutY="298.0" prefHeight="31.0" prefWidth="53.0" />
+      <TextField fx:id="tbLiter" layoutX="145.0" layoutY="298.0" prefHeight="31.0" prefWidth="53.0" />
+      <Label layoutX="9.0" layoutY="353.0" text="Felder mit einem * müssen ausgefüllt werden" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="118.0" text="Alter (in Jahren)" />
+      <TextField fx:id="tbAge" layoutX="181.0" layoutY="113.0" prefHeight="31.0" prefWidth="90.0" />
+      <Label layoutX="126.0" layoutY="118.0" text="*" textFill="RED" />
+   </children>
+</AnchorPane>
